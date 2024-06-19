@@ -1,6 +1,6 @@
 # Two-Wheeler Vehicle Traffic Violations Detection and Ticketing using YOLO Algorithm
 
-![Two-Wheeler Traffic Violation](demo.jpg)
+
 
 ## Introduction
 
