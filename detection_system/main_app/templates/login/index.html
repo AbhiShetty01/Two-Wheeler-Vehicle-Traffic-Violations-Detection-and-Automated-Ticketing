@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'mainstyle.css' %}" />
+    <link rel="stylesheet" href="{% static '/login/style.css' %}" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="main_container background login">
+      <div class="container">
+        <h1>Login</h1>
+        {% if error %}
+          <span style="color:red;">{{error}}</span>
+        {% endif %}
+        <div class="form_container">
+          <div class="top flex background">
+            <div class="top_child flex">
+              <h2>Login Into System</h2>
+              <!-- <a href="../register/index.html" class="btn link"> Register </a> -->
+            </div>
+          </div>
+          <div class="bottom">
+            <form method="post" class="flex">
+              {% csrf_token %}
+              <input type="text" placeholder="user" name="username" required />
+              <input type="password" placeholder="Password" name="password" required />
+              <button type="submit" class="btn">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+.font {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+::selection {
+  background-color: black;
+}
+.home {
+  background-image: url("../assets/new.jpg");
+}
+
+.home .content {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.301);
+  height: 90%;
+  width: 90%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-direction: column;
+}
+.home .content h1 {
+  font-size: 2.5rem;
+  color: rgb(194, 184, 232);
+}
+
+.home .content .childs_container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.home .content .childs_container .content_childs {
+  box-shadow: 0px 0px 24px 9px rgba(0, 0, 0, 0.742);
+  background-color: rgba(0, 0, 0, 0.406);
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+  transition: transform ease 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home .content .childs_container .content_childs .fa-solid {
+  font-size: 5rem;
+  color: rgb(10, 236, 85);
+}
+
+.home .content .childs_container .content_childs h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: white;
+}
+.home .content .childs_container .content_childs:hover {
+  transform: scale(0.8);
+  cursor: pointer;
+}

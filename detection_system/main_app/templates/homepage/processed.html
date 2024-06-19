@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detection Processed . . . </title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+    }
+    .left-column {
+        flex: 1;
+        padding: 20px;
+    }
+    .right-column {
+        flex: 1;
+        padding: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+    <center>
+    <h1>Smart Traffic Voilation Detection System</h1>
+
+    {% if data.not_more %}
+        <span style="color: red;">No more Images. Click Exit button.</span>
+    {% endif %}
+
+    {% if data.is_challan_send == True %}
+        <span style="color: green;">Challan Send Successfully.</span>
+        
+    {% elif data.is_challan_send == False %}
+        <span style="color: red;">Something went wrong while sending challan.</span>
+    {% endif %}
+
+
+    <div class="container">
+        <div class="left-column">
+            {% if data.img or data.not_more %}
+                <img src="{% static data.img %}" alt="Processed Image" width="400px" height="500px">
+            {% else %}
+                <img src="{% static 'test.png' %}" alt="Processed Image" width="400px" height="500px">
+            {% endif %}
+        </div>
+        <div class="right-column">
+            <table>
+                <tr>
+                    <th>HELMET STATUS</th>
+                    <td>{{data.helmet_status}}</td>
+                </tr>
+                <tr>
+                    <th>NUMBER PLATE</th>
+                    <td>{{data.lp_status}}</td>
+                </tr>
+                <tr>
+                    <th>PLATE NUMBER</th>
+                    <td>{{data.plate_number}}</td>
+                </tr>
+                <tr>
+                    <th>No. OF PASSENGERS</th>
+                    <td>{{data.no_of_passengers}}</td>
+                </tr>
+                </table>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+                <table>
+
+                <tr>
+                    <td style="border: none;">
+                        <a href="/send-challan">    
+                        <button style="padding: 15px;">Send Challan</button>
+                    </a>
+                    </td>
+                    
+                    {% if type == "image" %} 
+                        <td style="border: none;"><button style="padding: 15px;" disabled >Next Image</button></td>
+                    {% else %}
+                        <td style="border: none;">
+                            
+                            <a href="/process">
+                                <button style=" padding: 15px;" >Next Image</button>
+                            </a>
+                            
+                            </td>
+                    {% endif %}
+                </tr>
+            </table>
+            <br/>
+                <br/>
+                <br/>
+                <br/>
+                <center>
+            <a href="/"><button style="background-color: red; padding: 15px; margin-right: 75px; color: white;">EXIT</button></a>
+        </center>
+        </div>
+    </div>
+</center>
+</body>
+</html>

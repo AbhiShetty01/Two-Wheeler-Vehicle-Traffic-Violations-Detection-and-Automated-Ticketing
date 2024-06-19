@@ -1,0 +1,78 @@
+.login {
+  background-image: url("../assets/loginm.jpg");
+}
+
+h1 {
+  font-weight: 600;
+  color: rgb(72, 71, 71);
+}
+
+.form_container {
+  box-shadow: 0px 0px 25px rgba(128, 128, 128, 0.317);
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 50%;
+  flex-direction: row-reverse;
+}
+
+.top {
+  width: 100%;
+  height: 100%;
+  padding-right: 30px;
+  background-image: url("../assets/logis.jpg");
+  flex: 2;
+  justify-content: flex-end;
+}
+
+.top_child {
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+}
+
+.top_child h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(72, 71, 71);
+}
+.top_child .link {
+  background-color: rgb(27, 201, 149);
+}
+
+/* bottom styling */
+.bottom {
+  box-shadow: 0px 0px 25px rgba(128, 128, 128, 0.317);
+
+  backdrop-filter: blur(10px);
+  position: absolute;
+  left: 40px;
+  padding: 30px;
+  height: 110%;
+}
+
+.bottom form {
+  height: 100%;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.bottom form div {
+  width: 100%;
+  gap: 10px;
+}
+
+input {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border: 0.5px solid gray;
+  outline: none;
+}
+
+input:hover {
+  border: 0.5px solid rgb(10, 180, 121);
+}
+button {
+  background-color: dodgerblue;
+}

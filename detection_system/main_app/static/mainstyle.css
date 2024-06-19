@@ -1,0 +1,47 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.app {
+  font-family: "Open Sans", sans-serif;
+}
+
+.lin {
+  text-decoration: none;
+  color: inherit;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  padding: 10px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.background {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+.main_container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
