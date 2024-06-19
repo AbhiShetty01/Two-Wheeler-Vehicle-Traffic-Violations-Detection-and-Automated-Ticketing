@@ -27,5 +27,5 @@ To set up the project environment, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/Two-Wheeler-Vehicle-Traffic-Violations-Detection.git
+   git clone https://github.com/AbhiShetty01/Two-Wheeler-Vehicle-Traffic-Violations-Detection.git
    cd Two-Wheeler-Vehicle-Traffic-Violations-Detection
