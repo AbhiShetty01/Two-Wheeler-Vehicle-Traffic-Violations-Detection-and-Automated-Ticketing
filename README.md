@@ -29,3 +29,18 @@ To set up the project environment, follow these steps:
    ```bash
    git clone https://github.com/AbhiShetty01/Two-Wheeler-Vehicle-Traffic-Violations-Detection.git
    cd Two-Wheeler-Vehicle-Traffic-Violations-Detection
+   
+## Technologies Used
+Python: Programming language used for the project.
+YOLO (You Only Look Once): Real-time object detection algorithm.
+OpenCV: Computer vision library for image and video processing.
+TensorFlow/Keras: Deep learning framework for model training and inference.
+Evaluation
+Describe the evaluation metrics used to assess the performance of the YOLO model for traffic violations detection. Include metrics such as precision, recall, and mean average precision (mAP) if applicable.
+
+## Contributing
+Contributions to improve the project are welcome! If you have suggestions, bug reports, or want to contribute code, please follow these guidelines:
+
+Fork the repository and create your branch from main.
+Ensure your code follows the project's coding style and conventions.
+Make sure to test thoroughly before submitting a pull request.
