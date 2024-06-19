@@ -1,2 +1,2 @@
-# Two-Wheeler-Vehicle-Traffic-Violations-Detection-and-Automated-Ticketing
+# Two-Wheeler-Vehicle-Traffic-Violations-Detection-and Ticketing
 using machine learning algorithm
